@@ -1,0 +1,524 @@
+@charset "utf-8";
+
+/*============================================
+基本設定
+============================================*/
+* {
+	margin:0; 
+	padding:0; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size: 100%;
+}
+
+html {
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+	color:#333333;	
+	font-size:1.4em;
+	line-height:1.7;	
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+	background-color:#FFF;
+}
+
+li {
+	list-style-type:none;
+}
+
+#contBody {
+	margin:0 auto;
+	overflow: hidden;
+}
+
+.fontRed{
+	color: #D0021B;
+	text-decoration: underline;
+}
+
+.textAlignCenter{
+	text-align: center;
+}
+
+/*============================================
+パソコン
+============================================*/
+h2{
+	font-size: 4.6rem;
+	line-height:1.4;	
+}
+
+h3{
+	font-size: 3.4rem;
+	line-height:1.4;	
+}
+
+h4{
+	font-size: 2rem;
+	line-height:1.4;	
+}
+
+p{
+	font-size: 1.6rem;
+	line-height:1.8;	
+	margin-bottom: 20px;
+}
+
+/* header */
+#header{
+	margin:0 auto;
+	width: 1000px;
+	height: 88px;
+	background-color:#FFF;
+}
+
+#header h1{
+	padding-top:31px;
+}
+
+/* mainImage */
+#mainImgBg{
+	width: 100%;
+	height: 560px;
+	-moz-background-size:100% 100%;
+	background-size:100% 100%;
+	background-image:url("../img/imgGradetion.png")
+}
+
+#mainImg{
+	margin:0 auto;
+	width: 1000px;
+}
+
+.imgPc img{
+	width:670px;
+	margin: 30px 64px 0 -154px;
+	float: left;
+}
+
+.mainImgRight{
+	padding-top: 80px;
+	float:clear;
+}
+
+#mainImg h2{
+	color: #FFF;
+	margin-bottom: 20px;
+}
+
+#mainImg p{
+	color: #FFF;
+	margin-bottom: 30px;
+}
+
+.btMail img{
+	width: 420px;
+	height: 80px;
+}
+
+/* aboutKizuki */
+#aboutKizuki{
+	clear:both;
+	margin:0 auto;
+	width: 1000px;
+}
+
+#aboutKizuki p{
+	margin:0 auto;
+	width: 640px;
+}
+
+#aboutKizuki h3{
+	margin: 80px 0 20px 0;
+	text-align:center;
+}
+
+.aboutKizukiPc img{
+	margin:30px auto 20px auto;
+	width: 1000px;
+}
+.aboutKizukiPc { display: block !important; }
+.aboutKizukiSp { display: none !important; }
+
+/* functionKizuki */
+#functionKizuki{
+	margin:0 auto 60px auto;
+	width: 1000px;
+}
+
+.ulFunctionKizuki{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ulFunctionKizuki li{
+	width:333px;
+}
+
+.ulFunctionKizuki img{
+	width: 150px;
+	height: 150px;
+	display : block;
+	margin: 0 auto;
+}
+
+.ulFunctionKizuki h4{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.ulFunctionKizuki h4, .ulFunctionKizuki p{
+	width:280px;
+	display : block;
+	margin: 0 auto;
+}
+
+/* collect */
+#collectBack{
+	width: auto;
+	background-color: #F5F5F5;
+}
+
+#collect{
+	margin:0 auto;
+	width: 1000px;
+}
+
+#collect h3{
+	text-align: center;
+	padding: 60px 0 20px 0;
+}
+
+.ulCollect{
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 60px;
+	margin-bottom:60px;
+}
+
+.ulCollect li{
+	width: 490px;
+	border: solid 3px #E6E6E6;
+	background-color: #FFF;
+}
+
+.ulCollectLeft{
+	margin-right:8px;
+}
+
+.ulCollect h4{
+	text-align: center;
+	margin: 40px 0 20px 0;
+}
+
+.ulCollect p{
+	width: 410px;
+	margin: 0 auto 20px auto;
+}
+
+.ulCollect img{
+	display : block;
+	width: 410px;
+	margin: 0 auto 60px auto;
+}
+
+.middle{
+	display : block;
+	margin-top:90px;
+}
+
+/* addFunc */
+#addFunc{
+	margin:0 auto 20px auto;
+	width: 1000px;
+}
+
+#addFunc h3{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#addFunc ul{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top:20px;
+}
+
+#addFunc li{
+	width: 320px;
+}
+
+.addFuncLeft{
+	margin-right:20px;
+}
+
+#addFunc img{
+	width:40px;
+	height:40px;
+	float: left;
+}
+
+#addFunc h4{
+	margin: 5px 0 10px 0;
+}
+
+.addFuncCont{
+	width: 260px;
+	margin-left: 20px;
+	float:left;
+}
+
+/* regist */
+#registBack{
+	width: 100%;
+	height: auto;
+	-moz-background-size:100% 100%;
+	background-size:100% 100%;
+	background-image:url("../img/imgGradetion.png")
+}
+
+#regist{
+	margin:0 auto;
+	width: 1000px;
+	text-align: center;
+}
+
+#regist h3{
+	padding:40px 0 20px 0;
+	color: #FFF;
+}
+
+#regist p img{
+	width: 420px;
+	height: 80px;
+	margin: 0 0 40px 0;
+}
+
+/* footer */
+#footer{
+	margin:0 auto;
+	width: 1000px;
+	text-align: center;
+}
+
+#footer img{
+	margin-top: 30px;
+}
+
+.companyLink{
+	margin: 20px 0 10px 0;
+}
+
+.copyRight{
+	margin-bottom: 60px;
+}
+
+/*============================================
+スマートフォン
+============================================*/
+@media screen and (max-width:768px){ 
+h2{
+	font-size: 3.4rem;
+	line-height:1.4;	
+}
+
+h3{
+	font-size: 2.3rem;
+	line-height:1.4;	
+}
+
+h4{
+	font-size: 2.0rem;
+	line-height:1.4;	
+}
+
+p{
+	font-size: 1.6rem;
+	line-height:1.4;	
+}
+
+#header h1{
+	padding-top:34px;
+	padding-left:30px;
+}
+
+#header img{
+	width:196px;
+	height:20px;
+}
+
+#mainImgBg{
+	height: auto;
+}
+
+#mainImg{
+	width: 90%;
+}
+
+.imgPc img{
+	width:100%;
+	display:block;
+	margin: 30px auto;
+}
+
+.mainImgRight{
+	clear:both;
+	margin: 0;
+	padding:0;
+	text-align:center;
+}
+
+#mainImg p{
+	text-align:left;
+}
+
+.btMail img{
+	width:100%;
+	max-width: 420px;
+	height:auto;
+	margin-bottom:40px;
+}
+
+/* aboutKizuki */
+#aboutKizuki{
+	margin:0 auto;
+	width: 90%;
+}
+
+#aboutKizuki p{
+	width: 100%;
+}
+
+#aboutKizuki h3{
+	margin: 40px 0 20px 0;
+	text-align:center;
+}
+
+.aboutKizukiSp img{
+	width: 100%;
+	margin:30px auto 20px auto;
+}
+.aboutKizukiPc { display: none !important; }
+.aboutKizukiSp { display: block !important; }
+
+/* funcKizuki */
+#functionKizuki{
+	margin:0 auto 40px auto;
+	width: 90%;
+}
+
+.ulFunctionKizuki{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ulFunctionKizuki li{
+	width:47%;
+}
+
+.ulFunctionKizuki img{
+	width: 120px;
+	height: 120px;
+}
+
+.spUlFuncLeft{
+	margin-right:6%;
+}
+
+.ulFunctionKizuki h4{
+	padding-bottom: 10px;
+}
+	
+.ulFunctionKizuki h4, .ulFunctionKizuki p{
+	width:auto;
+}
+
+/* collect */
+#collect{
+	width: 90%;
+}
+
+#collect h3{
+	padding: 40px 0 20px 0;
+}
+
+.ulCollect{
+	padding-bottom: 40px;
+	margin-bottom:40px;
+}
+
+.ulCollect li{
+	width: 100%;
+}
+
+.ulCollectLeft{
+	margin-right:0;
+	margin-bottom: 20px;
+}
+
+.ulCollect h4{
+	margin: 30px 0 10px 0;
+}
+
+.ulCollect p{
+	width: 80%;
+	margin-bottom:10px;
+}
+
+.ulCollect img{
+	width: 80%;
+	margin-bottom: 30px;
+}
+
+.middle{
+	margin-top:0;
+}
+
+/* addFunc */
+#addFunc{
+	width: 90%;
+}
+
+#addFunc li{
+	width: 100%;
+}
+
+.addFuncLeft{
+	margin-right:0;
+}
+
+.addFuncCont{
+	width: 80%;
+}
+
+/* regist */
+#regist{
+	width: 90%;
+}
+
+#regist p img{
+	width:100%;
+	max-width: 420px;
+	height:auto;
+}
+
+/* footer */
+#footer{
+	width: 90%;
+}
+
+#footer img{
+	width:196px;
+	height:20px;
+}
+
+.companyLink{
+	font-size: 1.2rem;
+}
+
+.copyRight{
+	font-size: 1.2rem;
+}
+}
